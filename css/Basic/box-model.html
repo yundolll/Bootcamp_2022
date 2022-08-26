@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 모델</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      /* box-sizing속성의 기본값은 content-box 이다.  */
+    }
+
+    body {
+      background-color: lightgray;
+    }
+
+    .time {
+      width: 600px;
+      margin: 0 auto;
+      margin-bottom: 9px;
+      border-bottom: 3px solid black;
+    }
+
+    .accent{
+      color: red;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 20px auto;
+      width: 600px;
+      /* width와 height속성은 콘텐츠영역의 크기를 지정할 때 사용  */
+      background-color: rgb(162, 162, 213);
+      color: #fff;
+    }
+
+    .shadow {
+      border-radius: 12px;
+      width: 200px;
+      height: 200px;
+      margin-right: 20px;
+    }
+
+    .box-group {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+    }
+    .one {
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .two {
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+
+    .three {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;  
+    }
+
+    .four {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    </style>
+</head>
+<body>
+  <div class="time">
+    <h1>block/inline</h1>
+    <div>내일 죽을 것 처럼 <span class="accent">오늘</span>을 살고</div>
+    <p>영원히 살 것처럼 <br>내일을 꿈꾸어라.</p>
+  </div>
+
+  <h1>box-shadow 실험실</h1>
+  <section class="box-group">
+    <div class="shadow one"></div>
+    <div class="shadow two"></div>
+    <div class="shadow three"></div>
+    <div class="shadow four"></div>
+  </section>
+</body>
+</html>

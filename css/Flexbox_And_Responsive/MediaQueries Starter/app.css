@@ -1,0 +1,95 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+nav ul {
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* 무지개색 만들기 방법  */
+
+h1 {
+    color: rgb(145, 215, 151);
+}
+
+@media (min-width:500px) {
+    h1 {
+        color: rgb(249, 204, 121);
+    }
+}
+
+@media (min-width:800px) {
+    h1 {
+        color: rgb(247, 247, 187);
+    }
+}
+
+@media (min-width:1200px) {
+    h1 {
+        color: rgb(152, 235, 152);
+    }
+}
+
+@media (min-width:1700px) {
+    h1 {
+        color: rgb(128, 146, 237);
+    }
+}
+
+/* 화면을 돌렸을 경우  */
+/* @media (orientation: landscape) {
+    body {
+        background-color: rgb(254, 134, 154);
+    }
+} */
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav, nav ul {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}

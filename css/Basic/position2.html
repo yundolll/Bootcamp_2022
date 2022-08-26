@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 연습</title>
+  <style>
+    * {
+      margin: 0;
+    }
+    #contents {
+      margin: 0;
+      background: url('https://pbs.twimg.com/media/EL_hvk2UwAA_S8Z.jpg') no-repeat;
+      background-size: auto;
+      background-position: center;
+      width: 700px;
+      height: 500px;
+      position: relative;
+    }
+
+    h1 {
+      cursor: pointer;
+      font-family: 'Cabin Sketch';
+      text-shadow: #F07E51 1px 1px,#F07E51 -0px 0px,#F07E51 -1px 1px,#F07E51 -2px 2px,#F07E51 -3px 3px,#F07E51 -4px 4px,#F07E51 -5px 5px,#F07E51 -6px 6px,#F07E51 -7px 7px,#F07E51 -8px 8px,#F07E51 -9px 9px,#F07E51 -10px 10px,#F07E51 -11px 11px,#F07E51 -12px 12px,#F07E51 -13px 13px,#F07E51 -14px 14px,#F07E51 -15px 15px,#F07E51 -16px 16px,#F07E51 -17px 17px,#F07E51 -18px 18px,#F07E51 -19px 19px,#F07E51 -20px 20px,#F07E51 -21px 21px,#F07E51 -22px 22px,#F07E51 -23px 23px,#F07E51 -24px 24px,#F07E51 -25px 25px,#F07E51 -26px 26px,#F07E51 -27px 27px,#F07E51 -28px 28px,#F07E51 -29px 29px;
+      color: #EBEBED;
+      position: absolute;
+      color: #fff;
+      font-size: 120px;
+      bottom:60px;
+      left: 60px;
+      transition: transform 1200ms ease-in;
+    }
+
+    h1:hover {
+      user-select: none;
+      transform: scale(2);
+    }
+  </style>
+</head>
+<body>
+  <div id="contents">
+    <h1>CSS</h1>
+  </div>
+
+</body>
+</html>

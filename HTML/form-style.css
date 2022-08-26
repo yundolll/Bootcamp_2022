@@ -1,0 +1,51 @@
+#form1 li {
+  margin-bottom: 9px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.field1 {
+  padding: 20px;
+  margin-bottom:30px;
+}
+
+.field1 input {
+  border: lightgray 1px solid;
+  border-radius: 8px;
+  padding: 9px;
+}
+
+#form1 textarea {
+  width: 200px;
+  height: 80px;
+}
+
+.field2 {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border: none;
+  transition: transform 200ms ease-in;
+}
+
+button:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.register {
+  background-color: rgb(107, 107, 244);
+  color: #fff;
+}
+
+.button-group {
+  text-align: center;
+}

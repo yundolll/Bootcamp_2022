@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position 정리</title>
+  <style>
+    p {
+      padding: 20px;
+      width: 500px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    }
+
+    .static {
+      position: static;
+    }
+
+    .relative1 {
+      position: relative;
+    }
+
+    .relative2 {
+      position: relative;
+      left: 20px;
+      top: 30px;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .fixed {
+      text-align: center;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 20px;
+      top: 0;
+      right: 20px;
+      position: fixed;
+      box-shadow: none;
+      width: 80px;
+      background-color: black;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <p class="static">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, necessitatibus molestias dolorum iste nemo magni aut eum provident suscipit optio!
+  </p>
+  <p class="relative1">
+    relative의 이동기준점 : 본래 있던 자리
+  </p>
+  <p class="relative2">
+    relative의 이동기준점 : 본래 있던 자리
+  </p>
+  <p class="absolute">
+    absolute는 요소중에서 position: relative를 사용한 요소를 기준으로 위치를 결정. <br>
+    만약 부모 요소중에 없으면 상위 요소를 찾아보고, 그래도 없다면 더 위의 요소를 찾아봄.
+  </p>
+  <p class="fixed">
+    dark mode
+  </p>
+</body>
+</html>

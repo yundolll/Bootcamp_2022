@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex box play!</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .flex {
+      background-color: rgb(235, 235, 180);
+      margin: 0 auto;
+      width: 90%;
+      height: 500px;
+      display: flex;
+    }
+
+    .flex .sidebar {
+      background-color: red;
+      flex: 1 2 300px;
+    }
+
+    section {
+      background-color: orange;
+      flex: 2 1 800px;
+    }
+  </style>
+</head>
+<body>
+  <h1>let's play</h1>
+  <div class="flex">
+    <aside class="sidebar"></aside>
+    <section></section>
+    <aside class="sidebar"></aside>
+  </div>
+</body>
+</html>
