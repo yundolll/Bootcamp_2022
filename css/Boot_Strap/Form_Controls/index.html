@@ -4,19 +4,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Forms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+  <div class="container">
+
+    <h1 class="text-center display-2">
+      Form Practice🍪
+    </h1>
+
+
+
+    <h2 class="display-4 text-primary border-bottom pb-4">Form Example 1</h2>
+    <form action="#" autocomplete="off">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label class="form-label" for="email">Email address</label>
+            <input class="form-control" id="email" type="email" placeholder="write your email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label class="form-label" for="password">password</label>
+            <input class="form-control" id="password" type="password" placeholder="8-20 characters">
+            <div class="form-text">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" id="check">
+        <label class="form-check-label" for="check">Check me out</label>
+      </div>
+
+      <div class="mb-4 text-center" role="group" >
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-light" type="reset">Cancel</button>
+      </div>
+
+      <div class="row align-items-center mb-4">
+        <div class="col-auto">
+          <label class="col-form-label" for="password2">password</label>
+        </div>
+        <div class="col-auto">
+          <input class="form-control" disabled type="password" id="password2">
+        </div>
+        <div class="col-auto">
+          <span class="form-text">
+            Must be 8-20 characters long.
+          </span>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+      <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+      </div>
+    </form>
+
+    <h2 class="display-4 text-info border-bottom pb-4">Form Example 2</h2>
+
+    <form action="#exam" class="mb-3">
+      <h4>Read-only</h4>
+      <input class="form-control" readonly type="text" placeholder="Readonly input here...">
+    </form>
+
+    <form action="#exam02" class="row mb-5">
+      <div class="col-auto">
+        <label for="password" class="visually-hidden">Password</label>
+        <input type="password" class="form-control" placeholder="password">
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary mb-3" type="submit">Confirm identity</button>
+      </div>
+    </form>
+
+    <h2 class="display-4 text-secondary">
+      Form Example 3 - Select
+    </h2>
+
+    <form action="#" class="mb-5">
+      <select class="form-select" name="seoyunji" id="">
+        <option value="1">seo</option>
+        <option value="2">yun</option>
+        <option value="3">ji</option>
+      </select>
+    </form>
+
+    <h2 class="display-4 text-warning pb-4 border-bottom">
+      Form Example 4 - <span class="small text-black-50">Checks and radios</span>
+    </h2>
+
+    <form action="#">
+      <div class="form-check">
+        <input class="form-check-input" id="default" type="checkbox">
+        <label class="form-check-label" for="default">Default checkbox</label>
+      </div>
+    </form>
+
   </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
