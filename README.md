@@ -1,2 +1,2 @@
 # Bootcamp_2022
- frontend bootcamp
+ frontend bootcamp🚀
