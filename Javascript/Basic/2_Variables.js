@@ -31,12 +31,12 @@ console.log(score); // 10
 // score = score + 5 와 score += 5는 같다.
 
 let numLives = 9;
-console.log(numLives);
-console.log(numLives--);
-console.log(numLives);
-console.log(--numLives);
-console.log(numLives);
+console.log(numLives);  // 9
+console.log(numLives--);  // 9
+console.log(numLives);  // 8
+console.log(--numLives);  // 7
+console.log(numLives);  // 7
 
-console.log(++numLives);
-console.log(numLives++);
-console.log(numLives);
+console.log(++numLives);  // 8 
+console.log(numLives++);  // 8
+console.log(numLives);  // 9
