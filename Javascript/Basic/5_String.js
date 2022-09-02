@@ -15,7 +15,7 @@ console.log(animal[0]);   // D
 console.log(animal[1]);   // u
 
 console.log(animal.length);   // 13
-console.log(animal[12])
+console.log(animal[12]);  // s
 
 let phone = '(231)345-6789';
 console.log(phone[0]);
