@@ -41,5 +41,5 @@ if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
   mystery변수의 길이는 6 이상,
   mystery변수에 7이라는 문자열이 들어가있냐 ? 
 
-  !== 는 피연산자가 같지 않거나 자료형이 같지 않으면 true
+  !== 는 피연산자가 같지 않거나 타입이 같지 않으면 true
 */
