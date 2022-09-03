@@ -1,12 +1,10 @@
 // only one side needs to be true!
 
-
 // || (OR)
 // 한쪽만 참이어도 문장 전체가 참이 됨
 1 !== 1 || 10 === 10;   // true
 10 / 2 === 5 || null;   // true
 0 || undefined;     // false
-
 
 
 // 0-5 free
@@ -28,3 +26,5 @@ if(typeof age === 'number' && age <= 110) {
 } else {
   console.log('올바른 숫자를 입력해라');
 }
+
+// && 연산자는 || 연산자보다 우선순위가 높다.
