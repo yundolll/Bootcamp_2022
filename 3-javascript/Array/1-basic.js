@@ -31,10 +31,10 @@ console.log(stuff[2].length);  // 3
 let colors = ['rad','orange','green','yalloww'];
 
 colors[0] = 'red';
-console.log(colors);
+console.log(colors);  // (4) ['red','orange','green','yalloww']
 
 colors[3] = 'yellow';
-console.log(colors);
+console.log(colors); // (4) ['red','orange','green','yellow']
 
 colors[10] = 'Indigo';
 console.log(colors);  // ['red', 'orange', 'green', 'yellow', empty × 6, 'Indigo']
