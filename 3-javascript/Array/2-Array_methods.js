@@ -14,14 +14,16 @@ movieLine.push('pablo');
 movieLine.push('oliver');
 
 console.log(movieLine);
+// ['tom', 'nancy', 'jax', 'pablo', 'oliver']
 
 movieLine.pop();  
 console.log(movieLine);
+// ['tom', 'nancy', 'jax', 'pablo']
 
 
 // unshift 🧦
 let person = ['harry','potter','yun','ji'];
-person.unshift('you','hoo')
+person.unshift('you','hoo');
 console.log(person);
 // (6) ['you', 'hoo', 'harry', 'potter', 'yun', 'ji']
 
@@ -51,7 +53,7 @@ console.log(lottoNum.includes(4));  // true
 console.log(lottoNum.includes(7));  // false
 
 let result = lottoNum.includes(4);
-console.log(result);    // true
+console.log(result); // true
 
 
 // indexOf 🧦
@@ -67,7 +69,7 @@ console.log(dd.indexOf('d'));   // -1
 
 
 // reverse 🧦
-// 배열을 뒤집어버림. 원본 배열에도 영향이 바로 끼침 (파과메서드라고 불림)
+// 배열을 뒤집어버림. 원본 배열에도 영향이 바로 끼침 (파괴메서드라고 불림)
 
 let fruit = ['사과','바나나','포도'];
 fruit.reverse();
@@ -90,7 +92,7 @@ console.log(ex1.slice(1,-2)); // (4) [2, 3, 4, 5]
 console.log(ex1); // 원본 배열에 지장이 없음
 
 const copyEx = ex1.slice(0,3);
-console.log(copyEx);
+console.log(copyEx);  // [1, 2, 3]
 
 
 // splice - removes / replaces elements 🧦
@@ -183,3 +185,29 @@ const exam1 = [1,2,'hi'];
 console.log(exam1.toString());
 console.log(exam1);
 console.log(typeof exam1);  // object
+
+
+
+// 배열에서의 삼중 등호 연산자와 이중 등호 연산자의 역할
+
+['hi','bye'] === ['hi','bye']; // false
+[1] === [1]; // false
+[1] == [1]; // false
+[] == []; // false
+
+// javascript는 배열 안에 있는 것에는 관심이 없음.
+// 실제로 비교하는 건 메모리에서 참조되는 값임
+
+let nums = [1,2,3];
+let numsCopy = nums;
+console.log(nums === numsCopy); // true
+
+nums[2] = 'new number';
+console.log(nums);  // [1, 2, 'new number']
+console.log(numsCopy);  // [1, 2, 'new number']
+
+// nums와 numsCopy변수는 메모리에서 같은 것을 참조하고 있음.
+
+numsCopy.pop();
+console.log(numsCopy);  // [1,2]
+console.log(nums);  // [1,2]
