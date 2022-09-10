@@ -207,7 +207,10 @@ console.log(nums);  // [1, 2, 'new number']
 console.log(numsCopy);  // [1, 2, 'new number']
 
 // nums와 numsCopy변수는 메모리에서 같은 것을 참조하고 있음.
+// 즉, nums와 numsCopy변수는 서로 연결되어 있음.
 
 numsCopy.pop();
 console.log(numsCopy);  // [1,2]
 console.log(nums);  // [1,2]
+
+// javascript에서 배열을 비교하려면 둘이 같은 참조를 따르는 배열인지 확인하기
