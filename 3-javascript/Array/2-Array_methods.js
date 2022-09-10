@@ -85,6 +85,7 @@ console.log(ex1.slice(1));  // (6) [2, 3, 4, 5, 6, 7]
 console.log(ex1.slice(2));  // (5) [3, 4, 5, 6, 7]
 console.log(ex1.slice(1,3));  // (2) [2, 3]
 console.log(ex1.slice(1,20)); // (6) [2, 3, 4, 5, 6, 7]
+console.log(ex1.slice(1,-2)); // (4) [2, 3, 4, 5]
 
 console.log(ex1); // 원본 배열에 지장이 없음
 
@@ -100,8 +101,85 @@ console.log(copyEx);
 // 원본 배열에 지장이 있음
 const ex2 = [1,2,3,4,5,6,7];
 
-console.log(ex2.splice(3)); // (4) [4, 5, 6, 7]
+ex2.splice(3); // (4) [4, 5, 6, 7]
 console.log(ex2); // (3) [1, 2, 3]
 
-console.log(ex2.splice(0,0,'hello'));
+ex2.splice(0,0,'hello');
+// 1. 몇번째 인자에서? 2. 얼마나 삭제? 3. 뭘 넣을거야?
 console.log(ex2); // (4) ['hello', 1, 2, 3]
+
+// 연습해보기
+
+const color = ['red','orange','yellow','green','blue'];
+console.log(color.indexOf('blue'));
+
+console.log(color); // (5) ['red', 'orange', 'yellow', 'green', 'blue']
+color.splice(5,0,'purple');
+console.log(color); 
+// (6) ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+// 근데 이 예제에서는 push를 사용하는게 낫지 않을까 ?
+
+const color2 = ['red','orrange','yeelllow','green','bluee'];
+// color2.splice(1,1,'orange');
+// console.log(color2);
+
+// color2.splice(2,1,'yellow');
+// console.log(color2);
+
+// color2.splice(4,1,'blue');
+// console.log(color2);
+
+color2.splice(1,2,'orange','yellow'); // 이렇게 문자열 두개전달도 가능
+console.log(color2);
+// (5) ['red', 'orange', 'yellow', 'green', 'bluee']
+
+// bluee 삭제해보기
+color2.splice(4,1);
+console.log(color2);  // ['red', 'orange', 'yellow', 'green']
+
+
+
+// 사실상 splice는 그렇게 효율적인 방법은 아님. 가능하면 배열 맨 끝을
+// 업데이트 하는게 나음.
+
+
+
+// sort 🧦 
+// sort() 메서드는 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환합니다. 
+// 기본 정렬 순서는 문자열의 유니코드 코드 포인트를 따릅니다.
+
+// 실무에서 자주 사용
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const arr1 = [1, 30, 4, 21, 100000];
+arr1.sort();
+console.log(arr1);
+// expected output: Array [1, 100000, 21, 30, 4]
+
+
+const scores = [1,70,100,2500, 9, -12];
+// scores.sort();
+// console.log(scores);  // [-12, 1, 100, 2500, 70, 9]
+
+function example(num) {
+  if( num < 1) {
+    return 1;
+  } 
+  if( num > 1 ) {
+    return -1;
+  }
+  return 0;
+}
+
+scores.sort(example);
+console.log(scores);
+
+
+const exam1 = [1,2,'hi'];
+console.log(exam1.toString());
+console.log(exam1);
+console.log(typeof exam1);  // object
