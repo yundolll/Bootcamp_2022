@@ -246,4 +246,4 @@ const gameBoard = [
 console.log(gameBoard); // (3) [Array(3), Array(3), Array(3)]
 
 // 첫번째 배열의 null에 접근하는 방법
-console.log(gameBoard[0][1])
+console.log(gameBoard[0][1]); // null
