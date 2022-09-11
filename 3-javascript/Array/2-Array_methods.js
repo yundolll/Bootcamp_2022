@@ -214,3 +214,36 @@ console.log(numsCopy);  // [1,2]
 console.log(nums);  // [1,2]
 
 // javascript에서 배열을 비교하려면 둘이 같은 참조를 따르는 배열인지 확인하기
+
+
+
+// 배열 + const
+// const로 배열을 저장해도 변수 자체가 재할당되지 않음
+const number = [1,2,3];
+// 이때 저장한건 콘텐츠가 아닌, '참조'임
+// 이 배열의 참조인 주소는 아무런 영향을 받지 않음
+// number의 화살표가 가리키는 건 이 배열임
+
+number.push(4);
+console.log(number);  // [1, 2, 3, 4]
+
+// number = 5;
+// Uncaught TypeError: Assignment to constant variable. 에러뜸
+
+// number = [1,2,3] 이것도 에러뜸
+// 자바스크립트 눈에는 다른 배열로 보임
+
+
+
+
+// 다차원 배열 ( NESTED ARRAYS )
+const gameBoard = [
+  ['O', null, 'X'],
+  [null, 'X', 'O'],
+  ['X', 'O', null]
+];
+
+console.log(gameBoard); // (3) [Array(3), Array(3), Array(3)]
+
+// 첫번째 배열의 null에 접근하는 방법
+console.log(gameBoard[0][1])
